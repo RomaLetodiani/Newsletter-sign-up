@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         tomato: '#ff6257',
+        tomatoLight: '#ff625720',
         darkSlateGray: '#242742',
         charcoalGrey: '#36384e',
         grey: '#9294a0',
