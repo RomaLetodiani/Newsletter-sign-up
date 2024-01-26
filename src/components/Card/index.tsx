@@ -7,10 +7,15 @@ const Card = () => {
   const [email, setEmail] = useState<string | null>(null);
 
   const onClick = () => {
+    setEmail(null);
     setView((prev) => (prev === 'signup' ? 'success' : 'signup'));
   };
   return (
-    <div className="bg-white p-5 rounded-lg">
+    <div
+      className={`bg-white ${
+        view === 'success' ? 'flex justify-center items-center' : ''
+      } drop-shadow-2xl min-h-screen min-[450px]:min-h-0 min-w-full min-[450px]:min-w-0 md:p-5 overflow-hidden min-[450px]:rounded-3xl`}
+    >
       {view === 'signup' ? (
         <SignUp email={email} setEmail={setEmail} setView={onClick} />
       ) : (
