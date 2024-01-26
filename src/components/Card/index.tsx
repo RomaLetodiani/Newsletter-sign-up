@@ -7,7 +7,7 @@ const Card = () => {
   const [email, setEmail] = useState<string | null>(null);
 
   const onClick = () => {
-    setEmail(null);
+    view === 'success' && setEmail(null);
     setView((prev) => (prev === 'signup' ? 'success' : 'signup'));
   };
   return (
