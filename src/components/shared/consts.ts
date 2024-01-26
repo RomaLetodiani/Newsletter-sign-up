@@ -1,32 +1,4 @@
-// <!-- Sign-up form start -->
-
-// Stay updated!
-
-// Join 60,000+ product managers receiving monthly updates on:
-
-// Product discovery and building what matters
-// Measuring to ensure updates are a success
-// And much more!
-
-// Email address
-// email@company.com
-
-// Subscribe to monthly newsletter
-
-// <!-- Sign-up form end -->
-
-// <!-- Success message start -->
-
-// Thanks for subscribing!
-
-// A confirmation email has been sent to ash@loremcompany.com.
-// Please open it and click the button inside to confirm your subscription.
-
-// Dismiss message
-
-// <!-- Success message end -->
-
-const textObj = {
+export const textObj = {
   signUp: {
     title: 'Stay updated!',
     desc: 'Join 60,000+ product managers receiving monthly updates on:',
@@ -38,6 +10,7 @@ const textObj = {
     input: {
       title: 'Email address',
       placeholder: 'email@company.com',
+      error: 'Valid email required',
     },
     button: 'Subscribe to monthly newsletter',
   },
